@@ -1,13 +1,11 @@
 # SpringBootRedis
 
-Redis DB를 이용하여 SpringBoot Session Cluster 하는 샘플
+## Redis DB를 이용하여 SpringBoot Session Cluster 하는 샘플
 
 ### Features
 
 * SpringBoot App 이 Redis에 세션을 저장하는 형태
 * App1, App2 간 세션클러스터링
-
---------------
 
 ### Skills
 
@@ -15,15 +13,13 @@ Redis DB를 이용하여 SpringBoot Session Cluster 하는 샘플
 * Redis (Docker로 구현)
 * Gradle
 
------------
-
 ### 사전 요구사항
 
 * Redis 1개 구축
 
 -----------
 
-### SpringBoot App 설정
+## SpringBoot App 설정
 
 #### build.gradle 에 dependencies 추가
 
@@ -93,9 +89,8 @@ public class RedisConfig {
 
 ## Session Cluster 확인
 
-동일한 도메인 (http://localhost) 으로 접속 후 세션이 공유가 되는지 확인한다.
+#### 동일한 도메인 (http://localhost) 으로 접속 후 세션이 공유가 되는지 확인한다.
 
-------------
 샘플 모듈 (App1, App2) 를 가동
 > `App1 접속` http://localhost:18080
 >
